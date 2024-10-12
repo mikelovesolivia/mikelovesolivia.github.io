@@ -13,6 +13,7 @@ export const educationData = [
     achievements: [
         {date: "Aug 2024", title: "Graduate School Professional Development Award"},
     ],
+    transcript: "Transcript_ND.pdf",
   },
   {
     dateRange: "Aug 2019 - Jun 2023",
@@ -34,7 +35,7 @@ export const educationData = [
         {date: "Dec 2020", title: "China National Scholarship (Highest Distinction)"},
         {date: "Dec 2020", title: "First-Class Academic Scholarship of Xidian University"},
         {date: "Dec 2020", title: "First Prize in Mathematics Competition of Chinese College Students"},
-
-    ]
+    ],
+    transcript: "Transcript_XDU.pdf",
   },
 ];

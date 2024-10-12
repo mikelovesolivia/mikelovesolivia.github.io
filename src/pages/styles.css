@@ -1,0 +1,36 @@
+/* home */
+.icon-hover:hover {
+    color: gray;
+    transform: scale(1.1);
+    transition: transform 0.2s, color 0.2s;
+}
+
+/* experience */
+.vertical-timeline-element-subtitle {
+    font-size: 0.9rem !important;
+}
+
+.experience-location {
+    margin-top: 3px;
+    color: #888;
+    font-size: 0.7rem !important;
+}
+
+.experience-description {
+    font-size: 0.7rem !important;
+}
+
+.experience-badge {
+    font-size: 13px !important;
+    text-align: left !important;
+    padding: 5px 8px 5px 8px !important;
+    vertical-align: baseline;
+    color: white;
+    font-weight: lighter !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #AE944F !important;
+}
+
+/* education */

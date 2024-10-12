@@ -6,7 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experienceData } from "../data/experienceData";
 import Badge from "react-bootstrap/Badge";
 
-import "./pages.css";
+import "./styles.css";
 
 function Experience() {
   return (

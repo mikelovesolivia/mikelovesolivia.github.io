@@ -1,24 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Experience from "./pages/experience";
 import Education from "./pages/education";
 import Footer from "./components/Footer";
+import { homeData } from "./data/homeData";
 
 import "./App.css";
 
 function App() {
+
+  const location = useLocation();
+  const [pageTitle, setPageTitle] = useState("Welcome to My Portfolio");
+  const { pathname } = location;
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setPageTitle("Welcome to My Portfolio");
+    }
+    else {
+      setPageTitle(homeData.name);
+    }
+  }, [pathname]);
+
   return (
     <div>
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <img src="capoo.gif" width="50" /> My Portfolio
+            <img src="capoo.gif" width="50" /> {pageTitle}
           </Link>
           <button
             className="navbar-toggler"
