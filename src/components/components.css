@@ -38,7 +38,7 @@
     height: 10px;
     background-color: #333;
     border-radius: 50%;
-    left: 140px;
+    left: 17%;
     top: 5px;
 }
 
@@ -48,7 +48,7 @@
     width: 2px;
     height: 100%;
     background-color: #ddd;
-    left: 144px;
+    left: 17.45%;
     top: 20px;
     z-index: -1;
 }
@@ -103,7 +103,7 @@
 }
 
 .education-timeline-image {
-    margin-right: 50px;
+    margin-right: 70px;
     left: 0;
 }
 
@@ -124,7 +124,27 @@
 }
 
 .transcript-icon-hover-effect:hover {
-    color: #D2691E	;
+    color: #D2691E;
     transform: scale(1.1);
     transition: transform 0.2s, color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .education-timeline-item {
+        padding: 10px;
+    }
+
+    .education-timeline-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-timeline-item {
+        padding: 5px;
+    }
+
+    .education-timeline-container {
+        width: 100%;
+    }
 }
