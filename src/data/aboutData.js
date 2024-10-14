@@ -1,0 +1,76 @@
+export const aboutData = {
+  description: `I obtained my Bachelor's degree in Artificial Intelligence from
+              Xidian University in 2023. I am now a PhD student at Uninversity
+              of Notre Dame conducting research in deep learning for vision and
+              visualization. I have experience in data science and machine
+              learning, as well as full stack development.`,
+  skills: [
+    {
+      type: "Programming Languages",
+      list: ["C/C++", "Python", "JavaScript", "MATLAB"],
+    },
+    {
+      type: "Frontend Development",
+      list: [
+        "HTML",
+        "CSS",
+        "jQuery",
+        "EJS",
+        "Bootstrap",
+        "React",
+        "React Router",
+        "Material-UI",
+        "Axios",
+      ],
+    },
+    { type: "Backend Development", list: ["Express", "Flask", "Node.js"] },
+    { type: "Databases", list: ["MySQL", "PostgreSQL"] },
+    {
+      type: "Machine Learning & Data Science",
+      list: ["Scikit-Learn", "Scipy", "NumPy", "Pandas", "PyTorch", "OpenCV"],
+    },
+    { type: "Languages", list: ["Chinese (Native)", "English (Fluent)"] },
+    {
+      type: "Tools",
+      list: [
+        "Git",
+        "npm",
+        "Paraview",
+        "Linux",
+        "UNIX",
+        "Markdown",
+        "LaTeX",
+        "Docker",
+      ],
+    },
+    //{ type: "Others", list: [] },
+  ],
+  skillIcons: [
+    "css3",
+    "express",
+    "git",
+    "html5",
+    "javascript",
+    "mui",
+    "mysql",
+    "docker",
+    "nodedotjs",
+    "npm",
+    "postgresql",
+    "react",
+    "python",
+    "pandas",
+    "flask",
+    "pytorch",
+    "linux",
+    "unix",
+    "c",
+    "cplusplus",
+    "latex",
+    "opencv",
+    "scikitlearn",
+    "numpy",
+    "scipy",
+    "docker",
+  ],
+};
