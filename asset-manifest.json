@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.c10fb831.css",
-    "main.js": "/static/js/main.79c6b9df.js",
+    "main.css": "/static/css/main.648b5e39.css",
+    "main.js": "/static/js/main.aeaac3dc.js",
     "static/js/453.253ccfac.chunk.js": "/static/js/453.253ccfac.chunk.js",
     "static/media/blank-chalkboard-background-with-border.png": "/static/media/blank-chalkboard-background-with-border.0b5c2c6dea2356ddcd7a.png",
     "static/media/natural-paper.png": "/static/media/natural-paper.4059dca9113a0926a9cd.png",
     "static/media/retina_wood.png": "/static/media/retina_wood.e67e77ae851066c33982.png",
+    "static/media/notebook.png": "/static/media/notebook.3200a3b29b5497577284.png",
     "static/media/type.png": "/static/media/type.b9639203528c5b651750.png",
     "static/media/paper-clip-svgrepo-com.svg": "/static/media/paper-clip-svgrepo-com.251dfc28591d606f573e.svg",
     "index.html": "/index.html",
-    "main.c10fb831.css.map": "/static/css/main.c10fb831.css.map",
-    "main.79c6b9df.js.map": "/static/js/main.79c6b9df.js.map",
+    "main.648b5e39.css.map": "/static/css/main.648b5e39.css.map",
+    "main.aeaac3dc.js.map": "/static/js/main.aeaac3dc.js.map",
     "453.253ccfac.chunk.js.map": "/static/js/453.253ccfac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c10fb831.css",
-    "static/js/main.79c6b9df.js"
+    "static/css/main.648b5e39.css",
+    "static/js/main.aeaac3dc.js"
   ]
 }
