@@ -42,7 +42,7 @@ function SkillCloud({ slugs }) {
             fontSize: "24px",
             fontWeight: "bold",
             mixBlendMode: "difference", 
-            color: "blue", 
+            color: "purple", 
           }}
       >
         Explore

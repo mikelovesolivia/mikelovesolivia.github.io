@@ -135,3 +135,23 @@
     margin-bottom: 0.5rem;
     font-size: 0.7rem;
 }
+
+.wood-texture {
+    background-image: url('../../public/retina_wood.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.paper-texture {
+    background-color: #ded1bc;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.mixture-texture {
+    background-color: #fafad2;
+    background-image: url("https://www.transparenttextures.com/patterns/washi.png");
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.3);
+}
