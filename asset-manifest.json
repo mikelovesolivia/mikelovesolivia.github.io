@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e5dd478.css",
-    "main.js": "/static/js/main.4d559242.js",
+    "main.css": "/static/css/main.5977f9bd.css",
+    "main.js": "/static/js/main.1c4a2266.js",
     "static/js/453.0437a03d.chunk.js": "/static/js/453.0437a03d.chunk.js",
     "static/media/blank-chalkboard-background-with-border.png": "/static/media/blank-chalkboard-background-with-border.0b5c2c6dea2356ddcd7a.png",
     "static/media/natural-paper.png": "/static/media/natural-paper.4059dca9113a0926a9cd.png",
@@ -10,12 +10,12 @@
     "static/media/type.png": "/static/media/type.b9639203528c5b651750.png",
     "index.html": "/index.html",
     "static/media/paper-clip-svgrepo-com.svg": "/static/media/paper-clip-svgrepo-com.251dfc28591d606f573e.svg",
-    "main.8e5dd478.css.map": "/static/css/main.8e5dd478.css.map",
-    "main.4d559242.js.map": "/static/js/main.4d559242.js.map",
+    "main.5977f9bd.css.map": "/static/css/main.5977f9bd.css.map",
+    "main.1c4a2266.js.map": "/static/js/main.1c4a2266.js.map",
     "453.0437a03d.chunk.js.map": "/static/js/453.0437a03d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e5dd478.css",
-    "static/js/main.4d559242.js"
+    "static/css/main.5977f9bd.css",
+    "static/js/main.1c4a2266.js"
   ]
 }
