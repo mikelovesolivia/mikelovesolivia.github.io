@@ -9,6 +9,7 @@ import Experience from "./pages/experience";
 import Education from "./pages/education";
 import Footer from "./components/Footer";
 import About from "./pages/about";
+import Blog from "./pages/blog";
 import { homeData } from "./data/homeData";
 
 import "./App.css";
@@ -56,6 +57,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
       

@@ -65,7 +65,7 @@ function Home() {
                 data={aboutData.skills.flatMap((skill) =>
                   skill.list.map((item) => ({
                     text: item.replace(/\s*\(.*?\)\s*/g, ""),
-                    value: 1000,
+                    value: Math.floor(Math.random() * 1000) + 500,
                   }))
                 )}
                 font="Open Sans"

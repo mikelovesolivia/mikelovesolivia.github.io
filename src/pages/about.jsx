@@ -2,7 +2,12 @@ import React, { useRef } from "react";
 import { Button } from "react-bootstrap";
 import { aboutData } from "../data/aboutData";
 import Card from "react-bootstrap/Card";
+
+import AnyChart from "anychart-react/dist/anychart-react.min.js";
+
 import SkillCloud from "../components/SkillCloud";
+import NewspaperCard from "../components/NewspaperCard";
+import ChalkboardCard from "../components/ChalkboardCard";
 
 function About() {
   const aboutRef = useRef(null);
@@ -13,6 +18,49 @@ function About() {
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  const processPublicationList = (publication) => {
+    const boldName = `<strong>${publication.myName}</strong>`;
+    const regex = new RegExp(publication.myName, "g");
+
+    return publication.list.map((item) => {
+      let updatedItem = item.title.replace(regex, boldName);
+
+      let links = "";
+      if (item.paper) {
+        links += ` <a href="${item.paper}" target="_blank">[paper]</a>`;
+      }
+      if (item.code) {
+        links += ` <a href="${item.code}" target="_blank">[code]</a>`;
+      }
+
+      const sentences = updatedItem.split(". ");
+      const lastSentence = sentences[sentences.length - 1];
+
+      if (
+        lastSentence.toLowerCase().includes("under review") ||
+        lastSentence.toLowerCase().includes("accepted") ||
+        lastSentence.toLowerCase().includes("submitted") ||
+        lastSentence.toLowerCase().includes("published")
+      ) {
+        if (sentences.length > 1) {
+          sentences[sentences.length - 2] = `<em>${
+            sentences[sentences.length - 2]
+          }</em>`;
+        }
+      } else {
+        sentences[sentences.length - 1] = `<em>${lastSentence}</em>`;
+      }
+
+      updatedItem = sentences.join(". ") + links;
+      return `<p>${updatedItem}</p>`;
+    });
+  };
+
+  let publicationList = [];
+  if (aboutData.publication) {
+    publicationList = processPublicationList(aboutData.publication);
+  }
 
   return (
     <div className="container-fluid">
@@ -126,14 +174,21 @@ function About() {
         }}
       >
         <div className="row d-flex align-items-center w-100">
-          <div className="col-12 col-md-10 d-flex flex-column flex-md-row justify-content-center align-items-center order-1 order-md-1">
-            <div className="col-12 col-md-6">placeholder</div>
-
-            <div className="col-12 col-md-6 text-center mt-3 mt-md-0">
-              placeholder
+          <div className="col-12 col-md-10">
+            <div className="col-md-12">
+              <ChalkboardCard
+                title="Research Topics"
+                description={aboutData.research.description}
+                items={aboutData.research.topics}
+              />
+              <div className="col-md-2 mt-3 mt-md-0"></div>
             </div>
+            {publicationList.length > 0 && (
+              <div className="col-md-12">
+                <NewspaperCard publications={publicationList} />
+              </div>
+            )}
           </div>
-
           <div className="col-12 col-md-2 d-flex flex-column justify-content-between align-items-center text-center order-2 order-md-2">
             <Button
               variant="outline-primary"
@@ -163,13 +218,28 @@ function About() {
         }}
       >
         <div className="row d-flex align-items-center w-100">
-          <div className="col-12 col-md-10 d-flex flex-column flex-md-row justify-content-center align-items-center order-1 order-md-1">
-            <div className="col-12 col-md-6">placeholder</div>
-
-            <div className="col-12 col-md-6 text-center mt-3 mt-md-0">
-              placeholder
-            </div>
+        <div className="col-12 col-md-3 justify-content-center align-items-center order-1 order-md-1">
           </div>
+          <div className="col-12 col-md-5 d-flex justify-content-center align-items-center order-1 order-md-1 notebook-background" >
+            <AnyChart
+              type="wordtree"
+              height="400px"
+              width="100%"
+              data={aboutData.interests.flatMap((interest, index) => {
+                const title = interest.title;
+                return interest.details.map((item) => [
+                  "Interests" + " " + title + " " + item,
+                ]);
+              })}
+              maxFontSize="20"
+              fontFamily="EB Garamond"
+              fontStyle="italic"
+              fontWeight="bold"
+              background="none"
+            />
+          </div>
+          <div className="col-12 col-md-2 justify-content-center align-items-center order-1 order-md-1 mb-3">
+            </div>
 
           <div className="col-12 col-md-2 d-flex flex-column justify-content-between align-items-center text-center order-2 order-md-2">
             <Button

@@ -150,3 +150,135 @@
     }
 }
 
+
+/* NewspaperCard */
+
+.newspaper-card {
+    background: linear-gradient(to bottom, rgba(222, 222, 222, 1), rgba(200, 200, 200, 1)) !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+        0 2px 5px rgba(0, 0, 0, 0.08);
+    font-family: 'Times New Roman', Times, serif !important;
+    max-width: 800px !important;
+    margin: 20px auto !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.08) !important;
+    margin-top: 30px !important;
+}
+
+.newspaper-card:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../public/paper-clip-svgrepo-com.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scaleX(-1) rotate(-20deg);
+}
+
+.newspaper-card:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../public/paper-clip-svgrepo-com.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-20deg);
+}
+
+.newspaper-title {
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.newspaper-content {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+.newspaper-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.newspaper-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.newspaper-content a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.newspaper-content a:hover {
+    color: #007bff;
+}
+
+.newspaper-content strong {
+    font-weight: bold;
+}
+
+.newspaper-divider {
+    border-top: 1px solid #999;
+    margin: 20px 0;
+}
+
+/* ChalkboardCard */
+
+.chalkboard-card {
+    background-image: url('../../public/blank-chalkboard-background-with-border.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+    position: relative;
+}
+
+.chalkboard-title {
+    font-size: 1.3rem;
+    font-family: 'Cabin Sketch', sans-serif;
+    margin-bottom: 10px;
+}
+
+.chalkboard-description {
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+.chalkboard-list {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.chalkboard-list-item {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-left: 5%;
+}
