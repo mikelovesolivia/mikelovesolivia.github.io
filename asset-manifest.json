@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.82953760.css",
+    "main.css": "/static/css/main.270e9399.css",
     "main.js": "/static/js/main.2d3d776f.js",
     "static/js/453.0437a03d.chunk.js": "/static/js/453.0437a03d.chunk.js",
     "static/media/blank-chalkboard-background-with-border.png": "/static/media/blank-chalkboard-background-with-border.0b5c2c6dea2356ddcd7a.png",
@@ -10,12 +10,12 @@
     "static/media/type.png": "/static/media/type.b9639203528c5b651750.png",
     "index.html": "/index.html",
     "static/media/paper-clip-svgrepo-com.svg": "/static/media/paper-clip-svgrepo-com.251dfc28591d606f573e.svg",
-    "main.82953760.css.map": "/static/css/main.82953760.css.map",
+    "main.270e9399.css.map": "/static/css/main.270e9399.css.map",
     "main.2d3d776f.js.map": "/static/js/main.2d3d776f.js.map",
     "453.0437a03d.chunk.js.map": "/static/js/453.0437a03d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82953760.css",
+    "static/css/main.270e9399.css",
     "static/js/main.2d3d776f.js"
   ]
 }
