@@ -1,5 +1,3 @@
-import { Interests } from "@mui/icons-material";
-
 export const aboutData = {
   description: `I obtained my Bachelor's degree in Artificial Intelligence from
               Xidian University in 2023. I am now a PhD student at Uninversity
@@ -17,7 +15,6 @@ export const aboutData = {
         "HTML",
         "CSS",
         "jQuery",
-        "EJS",
         "Bootstrap",
         "React",
         "React Router",
@@ -25,7 +22,7 @@ export const aboutData = {
         "Axios",
       ],
     },
-    { type: "Backend Development", list: ["Express", "Flask", "Node.js"] },
+    { type: "Backend Development", list: ["Express", "Flask", "Node.js", "EJS"] },
     { type: "Databases", list: ["MySQL", "PostgreSQL"] },
     {
       type: "Machine Learning & Data Science",

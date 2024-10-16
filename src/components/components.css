@@ -8,6 +8,7 @@
     bottom: 0;
     width: 100%;
     height: 50px;
+    z-index: 10;
 }
 
 .footer-text {
@@ -281,4 +282,99 @@
     margin-bottom: 10px;
     list-style-type: disc;
     margin-left: 5%;
+}
+
+
+/* project card styles */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px !important;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin: 5px auto;
+}
+
+.project-card .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.project-card .subtitle {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.project-card .text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.project-card .link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.project-card .link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card .link a:hover {
+    text-decoration: underline;
+}
+
+.fixed-height-img {
+    height: 150px !important;
+    object-fit: cover;
+}
+
+.keywords-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.keyword-capsule {
+    background-color: #6B8E23;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+/* Hover effect: scale up the card and add shadow */
+.project-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Modal */
+
+.modal-time {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: -0.5rem;
+    margin-bottom: 0;
 }

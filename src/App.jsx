@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Experience from "./pages/experience";
@@ -48,6 +49,8 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <ScrollToTop />
 
       {/* Page Content */}
       <div className="page-contents">

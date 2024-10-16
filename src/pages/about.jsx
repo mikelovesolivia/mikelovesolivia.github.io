@@ -121,7 +121,7 @@ function About() {
           scrollMarginTop: "80px",
         }}
       >
-        <div className="row d-flex align-items-center w-100">
+        <div className="row d-flex align-items-center w-100 mt-2">
           {/* Left side content (skills and skill cloud) */}
           <div className="col-12 col-md-10 d-flex flex-column flex-md-row justify-content-center align-items-center order-1 order-md-1">
             {/* Skills Card */}

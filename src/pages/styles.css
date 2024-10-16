@@ -25,7 +25,7 @@
 
 .skillset-text {
     position: absolute;
-    top: 0;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
     padding: 0 5px;
@@ -34,8 +34,22 @@
     font-weight: bold;
     font-size: 1.5rem;
     color: olive;
+    margin-left: 40px
 }
 
+.wordcloud-container {
+    margin-left: 80px;
+}
+
+@media (max-width: 768px) {
+    .wordcloud-container {
+        margin-left: 0;
+    }
+    .skillset-text {
+        margin-left: 0;
+        top: 0;
+    }
+}
 
 /* experience */
 .vertical-timeline-element-subtitle {
@@ -163,4 +177,12 @@
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* projects */
+.visitor-map {
+    position: absolute;
+    /*top: 250px;*/
+    bottom: 0px;
+    width: 100%;
 }

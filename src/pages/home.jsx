@@ -8,6 +8,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import WordCloud from "react-d3-cloud";
 
+import VisitorMap from "../components/VisitorMap";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -57,23 +59,28 @@ function Home() {
         </div>
       </div>
       <div className="row mt-5">
-        <div className="col-md-4 position-relative">
+        <div className="col-md-4 order-3 order-md-1 position-relative mt-1 mb-1">
           {aboutData.skills && (
             <div>
-              <div className="skillset-text text-center">Skill Set</div>
-              <WordCloud
-                data={aboutData.skills.flatMap((skill) =>
-                  skill.list.map((item) => ({
-                    text: item.replace(/\s*\(.*?\)\s*/g, ""),
-                    value: Math.floor(Math.random() * 1000) + 500,
-                  }))
-                )}
-                font="Open Sans"
-              />
+              <div className="skillset-text text-center ml-5">Skill Set</div>
+              <div className="wordcloud-container">
+                <WordCloud
+                  data={aboutData.skills.flatMap((skill) =>
+                    skill.list.map((item) => ({
+                      text: item.replace(/\s*\(.*?\)\s*/g, ""),
+                      value: Math.floor(Math.random() * 1000) + 500,
+                    }))
+                  )}
+                  font="Open Sans"
+                />
+              </div>
             </div>
           )}
+          <div className="visitor-map">
+            <VisitorMap />
+          </div>
         </div>
-        <div className="col-md-4 d-flex justify-content-center">
+        <div className="col-md-4 d-flex justify-content-center order-1 order-md-2">
           <Card
             sx={{
               background:
@@ -121,7 +128,7 @@ function Home() {
             </CardContent>
           </Card>
         </div>
-        <div className="col-md-4 d-flex flex-column align-items-center">
+        <div className="col-md-4 d-flex flex-column align-items-center mt-2 order-2 order-md-2">
           <img
             className="profile-image"
             src={homeData.selfie}
