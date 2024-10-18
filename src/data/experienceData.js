@@ -5,6 +5,23 @@ import SchoolIcon from "@mui/icons-material/School";
 
 export const experienceData = [
   {
+    title: "Graduate Research Assistant",
+    subtitle: "University of Notre Dame",
+    location: "South Bend, IN, USA",
+    date: "Aug 2023 - Present",
+    img: <img src="nd.png" width="50px" alt="nd" style={{ float: "right" }} />,
+    icon: <SchoolIcon />,
+    description:
+      "Conduct full-time research in: (1) SciVis image compression through deep learning methods; (2) Transfer function optimization in volume rendering through multimodal learning; (3) Medical image synthesis through diffusion model.",
+    keywords: [
+      "Deep Learning",
+      "Volume Rendering",
+      "Multimodal Learning",
+      "CLIP",
+      "Diffusion Model",
+    ],
+  },
+  {
     title: "Conference Presenter",
     subtitle: "IEEE VIS 2024",
     location: "Virtual",
@@ -25,23 +42,6 @@ export const experienceData = [
       "Image Compression",
       "SciVis",
       "Stereo Attention",
-    ],
-  },
-  {
-    title: "Graduate Research Assistant",
-    subtitle: "University of Notre Dame",
-    location: "South Bend, IN, USA",
-    date: "Aug 2023 - Present",
-    img: <img src="nd.png" width="50px" alt="nd" style={{ float: "right" }} />,
-    icon: <SchoolIcon />,
-    description:
-      "Conduct full-time research in: (1) SciVis image compression through deep learning methods; (2) Transfer function optimization in volume rendering through multimodal learning; (3) Medical image synthesis through diffusion model.",
-    keywords: [
-      "Deep Learning",
-      "Volume Rendering",
-      "Multimodal Learning",
-      "CLIP",
-      "Diffusion Model",
     ],
   },
   {
