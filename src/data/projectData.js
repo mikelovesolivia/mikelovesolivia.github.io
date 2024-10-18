@@ -111,7 +111,7 @@ export const projectData = [
         and it supports flexible exploration of parameters like time steps and isovalues.
         It improves the quality of visualizations with fewer images and faster training times compared to existing methods, 
         and outperforms baseline solutions in both speed and accuracy. The paper is currently under peer review at 
-        IEEE Transactions on Visualization and Computer Graphics`,
+        IEEE Transactions on Visualization and Computer Graphics.`,
   },
   {
     title: "Undergraduate Deep Learning Course Projects",
