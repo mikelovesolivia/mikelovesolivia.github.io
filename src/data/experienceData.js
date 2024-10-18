@@ -5,6 +5,29 @@ import SchoolIcon from "@mui/icons-material/School";
 
 export const experienceData = [
   {
+    title: "Conference Presenter",
+    subtitle: "IEEE VIS 2024",
+    location: "Virtual",
+    date: "Oct 2024",
+    img: (
+      <img
+        src="vis2024.png"
+        width="150px"
+        alt="vis"
+        style={{ float: "right" }}
+      />
+    ),
+    icon: <SchoolIcon />,
+    description:
+      "Presenting the paper titled 'FCNR: Fast Compressive Neural Representation of Visualization Images' at the IEEE VIS 2024 conference. The paper introduces a novel deep learning-based image compression method for scientific visualization images, which significantly accelerates the encoding and decoding while maintaining high visual quality.",
+    keywords: [
+      "Deep Learning",
+      "Image Compression",
+      "SciVis",
+      "Stereo Attention",
+    ],
+  },
+  {
     title: "Graduate Research Assistant",
     subtitle: "University of Notre Dame",
     location: "South Bend, IN, USA",
@@ -36,7 +59,14 @@ export const experienceData = [
     title: "Computer Vision Engineer Intern",
     subtitle: "Vanyi Technology, Vanke",
     location: "Shenzhen, Guangdong, China",
-    img: <img src="vanke.png" width="50px" alt="vanke" style={{ float: "right" }} />,
+    img: (
+      <img
+        src="vanke.png"
+        width="50px"
+        alt="vanke"
+        style={{ float: "right" }}
+      />
+    ),
     icon: <WorkIcon />,
     date: "Aug 2022 - Oct 2022",
     description:
@@ -53,7 +83,14 @@ export const experienceData = [
     subtitle: "Xidian University",
     location: "Xi'an, Shaanxi, China",
     date: "2020 - 2022",
-    img: <img src="xidian.png" width="50px" alt="xidian" style={{ float: "right" }} />,
+    img: (
+      <img
+        src="xidian.png"
+        width="50px"
+        alt="xidian"
+        style={{ float: "right" }}
+      />
+    ),
     icon: <SchoolIcon />,
     description:
       'Carefully designed tutoring content for courses in "Introduction to Probability Theory and Mathematical Statistics" and "Advanced Mathematics", regularly held online and on-site lectures, provided tutoring for students who faced difficulties in their studies, and consistently offered them long-term personalized tutoring and Q&A sessions.',
