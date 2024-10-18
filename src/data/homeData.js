@@ -18,3 +18,17 @@ export const homeData = {
     I also have experience in data science📂 and machine learning🤖, working with large datasets💾 to extract meaningful insights💡!
   `,
 };
+
+// export const homeData = {
+//   name: "John Doe",
+//   resume: "Resume.pdf",
+//   github: "https://github.com/mikelovesolivia",
+//   linkedin: "https://www.linkedin.com/in/yunfei-lu-3017ab25b/",
+//   selfie: "https://via.placeholder.com/150",
+//   email: "yunfeilu0112@gmail.com",
+//   description: [
+//     "Lorem ipsum",
+//     "Lorem ipsum",
+//   ],
+//   introduction: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nunc nec nisl ultricies ultricies.`
+// };

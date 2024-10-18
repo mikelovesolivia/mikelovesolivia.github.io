@@ -10,7 +10,7 @@ function Projects() {
     <Container>
     <Row className="g-5">
       {projectData.map((project, index) => (
-        <Col key={index} xs={12} sm={6} md={4} lg={4} className="mb-4">
+        <Col key={index} xs={12} md={4} lg={3} className="mb-4">
           <ProjectCard
             title={project.title}
             time={project.time}

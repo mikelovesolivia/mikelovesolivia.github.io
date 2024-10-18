@@ -10,7 +10,6 @@ import Experience from "./pages/experience";
 import Education from "./pages/education";
 import Footer from "./components/Footer";
 import About from "./pages/about";
-import Blog from "./pages/blog";
 import { homeData } from "./data/homeData";
 
 import "./App.css";
@@ -44,7 +43,13 @@ function App() {
               <Nav.Link as={Link} to="/education">Education</Nav.Link>
               <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
               <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-              <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+              <Nav.Link
+                href="https://mikelovesolivia.github.io/blog/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -60,7 +65,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
-          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
       
