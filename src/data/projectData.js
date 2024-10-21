@@ -64,7 +64,7 @@ export const projectData = [
       "Volume Rendering",
     ],
     description: `We improved the stereo image compression method ECSIC by 
-        adding a joint context module and extended it to accomodate the SciVis image
+        adding a joint context module and extended it to accommodate the SciVis image
         features by enabling the visualization parameters as input to the model. FCNR
         achieved much better reconstruction quality and speed compared to baselines based
         on the implicit neural representation, and 18.56% ~ 173.54% higher compression ratio
