@@ -1,6 +1,6 @@
 export const aboutData = {
   description: `I obtained my Bachelor's degree in Artificial Intelligence from
-              Xidian University in 2023. I am now a PhD student at Uninversity
+              Xidian University in 2023. I am now a graduate student at Uninversity
               of Notre Dame conducting research in deep learning for vision and
               visualization. I have experience in data science and machine
               learning, as well as full stack development.`,

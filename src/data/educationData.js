@@ -4,10 +4,10 @@ export const educationData = [
   {
     dateRange: "Aug 2023 - Present",
     school: "University of Notre Dame",
-    degree: "Ph.D. in Computer Science and Engineering",
+    degree: "M.Sc. in Computer Science and Engineering",
     image: <img src="nd.png" width="50px" style={{ float: "right" }} />,
     description: [
-      { name: "GPA", detail: "3.92/4.00" },
+      { name: "GPA", detail: "3.9/4.0" },
       {
         name: "Research Interests",
         detail:
